@@ -698,6 +698,58 @@ h1, h2, h3, h4 {
 .form-success h3 { font-size: 2rem; }
 .form-success p { color: var(--text-mid); font-size: 0.88rem; }
 
+/* ── REVIEWS ── */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-top: 48px;
+}
+.review-card {
+    background: var(--grey-dark);
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-top: 1px solid var(--border);
+    transition: background 0.2s;
+}
+.review-card:hover { background: var(--grey-mid); }
+.review-stars {
+    font-size: 0.9rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.review-text {
+    font-size: 0.88rem;
+    color: var(--text-mid);
+    line-height: 1.75;
+    flex: 1;
+}
+.review-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+}
+.review-name {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--white);
+}
+.review-tag {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    letter-spacing: 0.05em;
+}
+@media (max-width: 1024px) {
+    .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+    .reviews-grid { grid-template-columns: 1fr; }
+}
+
 /* ── ABOUT HOME ── */
 .about-home {
     display: grid;
