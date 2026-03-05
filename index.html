@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,24 +9,25 @@
     <meta property="og:description" content="Cuts. Nails. No compromise. Bangkok's sharpest shop.">
     <meta property="og:url" content="https://headbangbarber-demo.netlify.app/">
     <title>HEADBANG BARBER — Bangkok</title>
+    <link rel="icon" href="img/logo.jpg"><link rel="shortcut icon" href="img/logo.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-<link rel="icon" href="img/logo.jpg"><link rel="shortcut icon" href="img/logo.jpg">
 </head>
-<body>
+<body class="lang-en">
 
     <nav class="navbar" id="navbar">
         <a href="index.html" class="nav-brand"><img src="img/logo.jpg" alt="HEADBANG BARBER" class="nav-logo"></a>
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" class="active"><span class="t-en">Home</span><span class="t-th">หน้าแรก</span></a></li>
+            <li><a href="services.html"><span class="t-en">Services</span><span class="t-th">บริการ</span></a></li>
+            <li><a href="gallery.html"><span class="t-en">Gallery</span><span class="t-th">ผลงาน</span></a></li>
+            <li><a href="contact.html"><span class="t-en">Contact</span><span class="t-th">ติดต่อ</span></a></li>
         </ul>
         <div class="nav-right">
-            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener" class="btn-book">Book Now</a>
+            <button class="lang-btn" id="langToggle">ภาษาไทย</button>
+            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener" class="btn-book"><span class="t-en">Book Now</span><span class="t-th">จองคิว</span></a>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
             </button>
@@ -35,13 +36,13 @@
 
     <div class="mobile-menu" id="mobileMenu">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html"><span class="t-en">Home</span><span class="t-th">หน้าแรก</span></a></li>
+            <li><a href="services.html"><span class="t-en">Services</span><span class="t-th">บริการ</span></a></li>
+            <li><a href="gallery.html"><span class="t-en">Gallery</span><span class="t-th">ผลงาน</span></a></li>
+            <li><a href="contact.html"><span class="t-en">Contact</span><span class="t-th">ติดต่อ</span></a></li>
         </ul>
         <div class="mobile-book">
-            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener">Book Now</a>
+            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener"><span class="t-en">Book Now</span><span class="t-th">จองคิว</span></a>
         </div>
     </div>
 
@@ -51,47 +52,56 @@
         <div class="hero-img" style="position:absolute;inset:0;background:url('img/cut-1.png') center/cover no-repeat;filter:grayscale(100%) contrast(1.1);opacity:0.7;"></div>
         <div style="position:absolute;inset:0;background:linear-gradient(to top, #000 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.2) 100%);"></div>
         <div class="hero-content">
-            <p class="hero-eyebrow">Bangkok · Est. 2020</p>
+            <p class="hero-eyebrow"><span class="t-en">Bangkok · Est. 2020</span><span class="t-th">กรุงเทพฯ · ก่อตั้ง 2563</span></p>
             <h1 class="hero-title">
                 <span>HEAD</span>
                 <span>BANG</span>
             </h1>
             <div class="hero-bottom">
-                <p class="hero-tagline">Cuts. Nails. No compromise.<br>One shop. Zero shortcuts.</p>
+                <p class="hero-tagline">
+                    <span class="t-en">Cuts. Nails. No compromise.<br>One shop. Zero shortcuts.</span>
+                    <span class="t-th">ตัดผม. ทำเล็บ. ไม่มีการประนีประนอม.<br>ร้านเดียว. ไม่มีทางลัด.</span>
+                </p>
                 <div class="hero-cta">
-                    <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener" class="btn-primary">Book Your Slot</a>
-                    <a href="services.html" class="btn-outline-white">See Services</a>
+                    <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener" class="btn-primary"><span class="t-en">Book Your Slot</span><span class="t-th">จองคิว</span></a>
+                    <a href="services.html" class="btn-outline-white"><span class="t-en">See Services</span><span class="t-th">ดูบริการ</span></a>
                 </div>
             </div>
         </div>
         <div class="hero-scroll">
             <div class="hero-scroll-line"></div>
-            <span>Scroll</span>
+            <span class="t-en">Scroll</span><span class="t-th">เลื่อน</span>
         </div>
     </section>
 
     <!-- WHAT WE DO -->
     <section class="section-dark">
         <div class="container">
-            <span class="label reveal">What We Do</span>
-            <h2 class="section-title white reveal">THE<br>FULL<br>TREATMENT</h2>
+            <span class="label reveal"><span class="t-en">What We Do</span><span class="t-th">บริการของเรา</span></span>
+            <h2 class="section-title white reveal"><span class="t-en">THE<br>FULL<br>TREATMENT</span><span class="t-th">ครบ<br>ทุก<br>บริการ</span></h2>
         </div>
         <div class="what-grid" style="margin-top:60px;">
             <div class="what-card reveal">
                 <div class="what-num">01</div>
-                <h3>Cuts</h3>
-                <p>Classic fades, tapers, designs, beard work — executed with precision every time. Walk in looking like yourself. Walk out looking like the best version of yourself.</p>
+                <h3><span class="t-en">Cuts</span><span class="t-th">ตัดผม</span></h3>
+                <p>
+                    <span class="t-en">Classic fades, tapers, designs, beard work — executed with precision every time. Walk in looking like yourself. Walk out looking like the best version of yourself.</span>
+                    <span class="t-th">เฟด เทเปอร์ แกะลาย และดูแลเครา — ทำด้วยความแม่นยำทุกครั้ง เดินเข้ามาในแบบคุณ เดินออกไปในแบบที่ดีที่สุดของคุณ</span>
+                </p>
                 <a href="services.html" class="what-link">
-                    See Barber Services
+                    <span class="t-en">See Barber Services</span><span class="t-th">ดูบริการตัดผม</span>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                 </a>
             </div>
             <div class="what-card reveal">
                 <div class="what-num">02</div>
-                <h3>Nails</h3>
-                <p>Manicures, pedicures, gel, nail art — done right, done clean. Because details matter. Whether you want simple and sharp or full expression, we've got you.</p>
+                <h3><span class="t-en">Nails</span><span class="t-th">ทำเล็บ</span></h3>
+                <p>
+                    <span class="t-en">Manicures, pedicures, gel, nail art — done right, done clean. Because details matter. Whether you want simple and sharp or full expression, we've got you.</span>
+                    <span class="t-th">เมนิเคียว เพดิเคียว เจล และลวดลายเล็บ — ทำอย่างถูกต้องและสะอาด เพราะรายละเอียดสำคัญ ไม่ว่าจะเรียบง่ายหรือครบเครื่อง เราพร้อมดูแลคุณ</span>
+                </p>
                 <a href="services.html" class="what-link">
-                    See Nail Services
+                    <span class="t-en">See Nail Services</span><span class="t-th">ดูบริการทำเล็บ</span>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                 </a>
             </div>
@@ -101,19 +111,19 @@
     <!-- STATEMENT -->
     <div class="statement">
         <p class="statement-text reveal">
-            We don't do <em>average</em>.<br>
-            We do <em>sharp</em>.
+            <span class="t-en">We don't do <em>average</em>.<br>We do <em>sharp</em>.</span>
+            <span class="t-th">เราไม่ทำแบบ<em>ธรรมดา</em><br>เราทำให้<em>คม</em></span>
         </p>
     </div>
 
     <!-- GALLERY TEASER -->
     <section class="section" style="padding-bottom:0;">
         <div class="container">
-            <span class="label reveal">The Work</span>
+            <span class="label reveal"><span class="t-en">The Work</span><span class="t-th">ผลงาน</span></span>
             <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;">
-                <h2 class="section-title white reveal">GALLERY</h2>
+                <h2 class="section-title white reveal"><span class="t-en">GALLERY</span><span class="t-th">แกลเลอรี่</span></h2>
                 <a href="gallery.html" class="what-link reveal" style="margin-bottom:24px;">
-                    View All
+                    <span class="t-en">View All</span><span class="t-th">ดูทั้งหมด</span>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                 </a>
             </div>
@@ -130,20 +140,99 @@
         </div>
     </section>
 
+    <!-- REVIEWS -->
+    <section class="section-dark">
+        <div class="container">
+            <span class="label reveal"><span class="t-en">Google Reviews</span><span class="t-th">รีวิว Google</span></span>
+            <h2 class="section-title white reveal"><span class="t-en">WHAT<br>THEY SAY</span><span class="t-th">สิ่งที่<br>ลูกค้าพูด</span></h2>
+            <div class="reviews-grid">
+                <div class="review-card reveal">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        <span class="t-en">"Guys guys guys, if you are up to getting your hair, nails, feet done, this has got to be the place in the heart of Sukhumvit. I walked in here and was transformed after 2 hours. I am a happy man returning home. Thanks, Snack. You're no 1."</span>
+                        <span class="t-th">"พี่น้องเอ้ย ถ้าอยากตัดผม ทำเล็บ ดูแลเท้า ที่นี่ต้องเป็นคำตอบในใจกลางสุขุมวิทเลย เดินเข้ามาแล้วเปลี่ยนใหม่หมดใน 2 ชั่วโมง กลับบ้านอย่างมีความสุขมาก ขอบคุณ Snack คุณเป็นที่สุด"</span>
+                    </p>
+                    <div class="review-meta">
+                        <span class="review-name">Singh Sidhu</span>
+                        <span class="review-tag"><span class="t-en">Local Guide · 22 reviews</span><span class="t-th">Local Guide · 22 รีวิว</span></span>
+                    </div>
+                </div>
+                <div class="review-card reveal">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        <span class="t-en">"Went to Headbang on our first day in Bangkok. Had no idea what I wanted so I showed them a picture and they figured out the rest. They truly blessed my head and set me up for a great trip."</span>
+                        <span class="t-th">"ไปที่ Headbang ในวันแรกที่กรุงเทพฯ ไม่รู้ว่าอยากได้ทรงไหนก็เลยโชว์รูปให้ดู แล้วพวกเขาก็จัดการส่วนที่เหลือ ทรงออกมาดีมากและทำให้ทริปนี้สุดยอดเลย"</span>
+                    </p>
+                    <div class="review-meta">
+                        <span class="review-name">Ethan The Boss</span>
+                        <span class="review-tag"><span class="t-en">2 months ago</span><span class="t-th">2 เดือนที่แล้ว</span></span>
+                    </div>
+                </div>
+                <div class="review-card reveal">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        <span class="t-en">"I had a gel manicure done here and my husband got a haircut. We're both very happy with the service. They paid so much attention to details and were super kind and helpful. Highly recommend."</span>
+                        <span class="t-th">"ทำเจลเมนิเคียวที่นี่ส่วนสามีตัดผม เราทั้งคู่พอใจมากกับการบริการ พวกเขาใส่ใจรายละเอียดมากและเป็นมิตรมากๆ แนะนำอย่างยิ่ง"</span>
+                    </p>
+                    <div class="review-meta">
+                        <span class="review-name">Fatima G</span>
+                        <span class="review-tag"><span class="t-en">Local Guide · 44 reviews</span><span class="t-th">Local Guide · 44 รีวิว</span></span>
+                    </div>
+                </div>
+                <div class="review-card reveal">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        <span class="t-en">"My son has had his hair cut here many times and is happy every time. All the barbers are very skilled and friendly. If you're looking for a good barbershop with reasonable prices and great service, Headbang is the place to go."</span>
+                        <span class="t-th">"ลูกชายมาตัดผมที่นี่หลายครั้งและพอใจทุกครั้ง ช่างทุกคนมีฝีมือดีและเป็นมิตรมาก ถ้าหาร้านตัดผมดีๆ ราคาเหมาะสมและบริการดีเยี่ยม Headbang คือที่ที่ต้องมา"</span>
+                    </p>
+                    <div class="review-meta">
+                        <span class="review-name">Orasa Rogers</span>
+                        <span class="review-tag"><span class="t-en">Local Guide · Fade cut</span><span class="t-th">Local Guide · เฟดคัต</span></span>
+                    </div>
+                </div>
+                <div class="review-card reveal">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        <span class="t-en">"I have been Lord's customer for many years. He has been taking care of my shaving and haircut. I just found his new location so convenient and still with reasonable price. If you look for a barber with good quality, this is the place."</span>
+                        <span class="t-th">"เป็นลูกค้าของ Lord มาหลายปีแล้ว เขาดูแลการโกนและตัดผมให้ตลอด เพิ่งมาเจอที่ตั้งใหม่ สะดวกมากและยังราคาเหมาะสมเหมือนเดิม ถ้าหาช่างตัดผมคุณภาพดี ที่นี่เลย"</span>
+                    </p>
+                    <div class="review-meta">
+                        <span class="review-name">Krirk Asavametha</span>
+                        <span class="review-tag"><span class="t-en">2 weeks ago · Beard trim</span><span class="t-th">2 สัปดาห์ที่แล้ว · แต่งเครา</span></span>
+                    </div>
+                </div>
+                <div class="review-card reveal">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        <span class="t-en">"The most professional haircut and beard care I have ever had. Came here twice and will definitely come back. Very fair price and amazing results. Very kind staff. 3 minutes walk from MRT Sukhumvit station."</span>
+                        <span class="t-th">"ตัดผมและดูแลเคราที่มืออาชีพที่สุดที่เคยได้รับ มาแล้ว 2 ครั้งและจะกลับมาแน่นอน ราคายุติธรรมมากและผลลัพธ์สุดยอด พนักงานใจดีมาก เดินจาก MRT สถานีสุขุมวิทแค่ 3 นาที"</span>
+                    </p>
+                    <div class="review-meta">
+                        <span class="review-name">Meshi Schindler</span>
+                        <span class="review-tag"><span class="t-en">Local Guide · 155 reviews · 540 photos</span><span class="t-th">Local Guide · 155 รีวิว · 540 รูป</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ABOUT -->
     <section class="section-light">
         <div class="container">
             <div class="about-home">
                 <div class="about-home-text reveal">
-                    <span class="label" style="color:#888;">The Shop</span>
-                    <h2 class="section-title black">ONE<br>SPOT.<br>DONE<br>RIGHT.</h2>
+                    <span class="label" style="color:#888;"><span class="t-en">The Shop</span><span class="t-th">เกี่ยวกับร้าน</span></span>
+                    <h2 class="section-title black"><span class="t-en">ONE<br>SPOT.<br>DONE<br>RIGHT.</span><span class="t-th">ร้าน<br>เดียว.<br>ทำได้<br>ดี.</span></h2>
                 </div>
                 <div class="about-home-body reveal">
-                    <p>Headbang Barber is Bangkok's answer to the shop that does it all — and does it properly. Cuts that hold. Nails that turn heads. A space that doesn't take itself too seriously, but takes the work seriously.</p>
-                    <p>No upsells. No waiting around. Just sharp work from people who know what they're doing.</p>
-                    <p>Find us on Sukhumvit 23. Walk-ins always welcome.</p>
+                    <p class="t-en">Headbang Barber is Bangkok's answer to the shop that does it all — and does it properly. Cuts that hold. Nails that turn heads. A space that doesn't take itself too seriously, but takes the work seriously.</p>
+                    <p class="t-th">Headbang Barber คือร้านในกรุงเทพฯ ที่ทำได้ทุกอย่าง และทำได้อย่างถูกต้อง ทรงผมที่คงทน เล็บที่สะดุดตา บรรยากาศที่ไม่เคร่งเครียดแต่จริงจังกับงาน</p>
+                    <p class="t-en">No upsells. No waiting around. Just sharp work from people who know what they're doing.</p>
+                    <p class="t-th">ไม่มีการขายเพิ่ม ไม่รอนาน แค่งานคมคายจากคนที่รู้ว่าตัวเองทำอะไร</p>
+                    <p class="t-en">Find us on Sukhumvit 23. Walk-ins always welcome.</p>
+                    <p class="t-th">พบเราที่สุขุมวิท 23 รับ walk-in ตลอดเวลา</p>
                     <a href="contact.html" class="about-home-link">
-                        Get Directions
+                        <span class="t-en">Get Directions</span><span class="t-th">ดูเส้นทาง</span>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                     </a>
                 </div>
@@ -151,77 +240,12 @@
         </div>
     </section>
 
-    <!-- REVIEWS -->
-    <section class="section-dark">
-        <div class="container">
-            <span class="label reveal">Google Reviews</span>
-            <h2 class="section-title white reveal">WHAT<br>THEY SAY</h2>
-            <div class="reviews-grid">
-
-                <div class="review-card reveal">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"Guys guys guys, if you are up to getting your hair, nails, feet done, this has got to be the place in the heart of Sukhumvit. I walked in here and was transformed after 2 hours. I am a happy man returning home. Thanks, Snack. You're no 1."</p>
-                    <div class="review-meta">
-                        <span class="review-name">Singh Sidhu</span>
-                        <span class="review-tag">Local Guide · 22 reviews</span>
-                    </div>
-                </div>
-
-                <div class="review-card reveal">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"Went to Headbang on our first day in Bangkok. Had no idea what I wanted so I showed them a picture and they figured out the rest. They truly blessed my head and set me up for a great trip."</p>
-                    <div class="review-meta">
-                        <span class="review-name">Ethan The Boss</span>
-                        <span class="review-tag">2 months ago</span>
-                    </div>
-                </div>
-
-                <div class="review-card reveal">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"I had a gel manicure done here and my husband got a haircut. We're both very happy with the service. They paid so much attention to details and were super kind and helpful. Highly recommend."</p>
-                    <div class="review-meta">
-                        <span class="review-name">Fatima G</span>
-                        <span class="review-tag">Local Guide · 44 reviews</span>
-                    </div>
-                </div>
-
-                <div class="review-card reveal">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"My son has had his hair cut here many times and is happy every time. All the barbers are very skilled and friendly. If you're looking for a good barbershop with reasonable prices and great service, Headbang is the place to go."</p>
-                    <div class="review-meta">
-                        <span class="review-name">Orasa Rogers</span>
-                        <span class="review-tag">Local Guide · Fade cut</span>
-                    </div>
-                </div>
-
-                <div class="review-card reveal">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"I have been Lord's customer for many years. He has been taking care of my shaving and haircut. I just found his new location so convenient and still with reasonable price. If you look for a barber with good quality, this is the place."</p>
-                    <div class="review-meta">
-                        <span class="review-name">Krirk Asavametha</span>
-                        <span class="review-tag">2 weeks ago · Beard trim</span>
-                    </div>
-                </div>
-
-                <div class="review-card reveal">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"The most professional haircut and beard care I have ever had. Came here twice and will definitely come back. Very fair price and amazing results. Very kind staff. 3 minutes walk from MRT Sukhumvit station."</p>
-                    <div class="review-meta">
-                        <span class="review-name">Meshi Schindler</span>
-                        <span class="review-tag">Local Guide · 155 reviews · 540 photos</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
     <!-- CTA STRIP -->
     <div class="cta-strip">
-        <h2 class="reveal">BOOK<br>YOUR<br>SLOT</h2>
+        <h2 class="reveal"><span class="t-en">BOOK<br>YOUR<br>SLOT</span><span class="t-th">จอง<br>คิว<br>คุณ</span></h2>
         <div class="cta-strip-right reveal">
-            <p>Walk-ins welcome.<br>Appointments recommended.</p>
-            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener" class="btn-primary">Book on Line</a>
+            <p><span class="t-en">Walk-ins welcome.<br>Appointments recommended.</span><span class="t-th">รับ walk-in<br>แนะนำให้จองล่วงหน้า</span></p>
+            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener" class="btn-primary"><span class="t-en">Book on Line</span><span class="t-th">จองผ่าน Line</span></a>
         </div>
     </div>
 
@@ -229,13 +253,13 @@
     <footer class="footer">
         <div class="footer-inner">
             <div class="footer-brand">
-                HEADBANG BARBER
-                <span>Bangkok · Cuts & Nails</span>
+                <img src="img/logo.jpg" alt="HEADBANG BARBER" class="footer-logo-img">
+                <span><span class="t-en">Bangkok · Cuts &amp; Nails</span><span class="t-th">กรุงเทพฯ · ตัดผม &amp; ทำเล็บ</span></span>
             </div>
             <ul class="footer-links">
-                <li><a href="services.html">Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html"><span class="t-en">Services</span><span class="t-th">บริการ</span></a></li>
+                <li><a href="gallery.html"><span class="t-en">Gallery</span><span class="t-th">ผลงาน</span></a></li>
+                <li><a href="contact.html"><span class="t-en">Contact</span><span class="t-th">ติดต่อ</span></a></li>
                 <li><a href="https://www.instagram.com/headbangbarber/" target="_blank" rel="noopener">Instagram</a></li>
             </ul>
             <p class="footer-copy">&copy; 2026 Headbang Barber</p>
