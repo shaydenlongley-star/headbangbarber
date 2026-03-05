@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,24 +7,25 @@
     <meta property="og:title" content="Contact — HEADBANG BARBER">
     <meta property="og:description" content="Find us, book a slot, or get in touch.">
     <title>Contact — HEADBANG BARBER</title>
+    <link rel="icon" href="img/logo.jpg"><link rel="shortcut icon" href="img/logo.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-<link rel="icon" href="img/logo.jpg"><link rel="shortcut icon" href="img/logo.jpg">
 </head>
-<body>
+<body class="lang-en">
 
     <nav class="navbar scrolled" id="navbar">
         <a href="index.html" class="nav-brand"><img src="img/logo.jpg" alt="HEADBANG BARBER" class="nav-logo"></a>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="index.html"><span class="t-en">Home</span><span class="t-th">หน้าแรก</span></a></li>
+            <li><a href="services.html"><span class="t-en">Services</span><span class="t-th">บริการ</span></a></li>
+            <li><a href="gallery.html"><span class="t-en">Gallery</span><span class="t-th">ผลงาน</span></a></li>
+            <li><a href="contact.html" class="active"><span class="t-en">Contact</span><span class="t-th">ติดต่อ</span></a></li>
         </ul>
         <div class="nav-right">
-            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener" class="btn-book">Book Now</a>
+            <button class="lang-btn" id="langToggle">ภาษาไทย</button>
+            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener" class="btn-book"><span class="t-en">Book Now</span><span class="t-th">จองคิว</span></a>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
             </button>
@@ -33,13 +34,13 @@
 
     <div class="mobile-menu" id="mobileMenu">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html"><span class="t-en">Home</span><span class="t-th">หน้าแรก</span></a></li>
+            <li><a href="services.html"><span class="t-en">Services</span><span class="t-th">บริการ</span></a></li>
+            <li><a href="gallery.html"><span class="t-en">Gallery</span><span class="t-th">ผลงาน</span></a></li>
+            <li><a href="contact.html"><span class="t-en">Contact</span><span class="t-th">ติดต่อ</span></a></li>
         </ul>
         <div class="mobile-book">
-            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener">Book Now</a>
+            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener"><span class="t-en">Book Now</span><span class="t-th">จองคิว</span></a>
         </div>
     </div>
 
@@ -48,10 +49,10 @@
 
         <!-- LEFT — INFO -->
         <div class="contact-left">
-            <h2 class="reveal">FIND<br>US</h2>
+            <h2 class="reveal"><span class="t-en">FIND<br>US</span><span class="t-th">ที่<br>ตั้ง</span></h2>
             <div class="info-block">
                 <div class="info-item reveal">
-                    <div class="info-label">Location</div>
+                    <div class="info-label"><span class="t-en">Location</span><span class="t-th">ที่อยู่</span></div>
                     <div class="info-value">
                         <a href="https://www.google.com/maps/search/?api=1&query=Headbang+Barber+3+Sukhumvit+23+Bangkok" target="_blank" rel="noopener">
                             3 Sukhumvit 23 Rd<br>
@@ -61,14 +62,14 @@
                     </div>
                 </div>
                 <div class="info-item reveal">
-                    <div class="info-label">Hours</div>
+                    <div class="info-label"><span class="t-en">Hours</span><span class="t-th">เวลาทำการ</span></div>
                     <div class="info-value">
-                        Monday – Sunday<br>
-                        10:00 – 20:00
+                        <span class="t-en">Monday – Sunday<br>10:00 – 20:00</span>
+                        <span class="t-th">จันทร์ – อาทิตย์<br>10:00 – 20:00</span>
                     </div>
                 </div>
                 <div class="info-item reveal">
-                    <div class="info-label">Book a Slot</div>
+                    <div class="info-label"><span class="t-en">Book a Slot</span><span class="t-th">จองคิว</span></div>
                     <div class="info-value">
                         <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener">Line: @headbangbarber</a>
                     </div>
@@ -92,11 +93,11 @@
 
         <!-- RIGHT — FORM -->
         <div class="contact-right">
-            <h2 class="reveal">GET IN<br>TOUCH</h2>
+            <h2 class="reveal"><span class="t-en">GET IN<br>TOUCH</span><span class="t-th">ติดต่อ<br>เรา</span></h2>
             <form name="contact" method="POST" data-netlify="true" class="contact-form" id="contactForm">
                 <input type="hidden" name="form-name" value="contact">
                 <div class="form-group reveal">
-                    <label for="name">Name</label>
+                    <label for="name"><span class="t-en">Name</span><span class="t-th">ชื่อ</span></label>
                     <input type="text" id="name" name="name" required placeholder="Your name">
                 </div>
                 <div class="form-group reveal">
@@ -104,28 +105,28 @@
                     <input type="email" id="email" name="email" required placeholder="your@email.com">
                 </div>
                 <div class="form-group reveal">
-                    <label for="subject">Subject</label>
+                    <label for="subject"><span class="t-en">Subject</span><span class="t-th">เรื่อง</span></label>
                     <select id="subject" name="subject" required>
                         <option value="" disabled selected></option>
-                        <option value="Booking">Booking</option>
-                        <option value="Pricing">Pricing</option>
-                        <option value="General">General Question</option>
-                        <option value="Other">Other</option>
+                        <option value="Booking"><span class="t-en">Booking</span><span class="t-th">จองคิว</span></option>
+                        <option value="Pricing"><span class="t-en">Pricing</span><span class="t-th">ราคา</span></option>
+                        <option value="General"><span class="t-en">General Question</span><span class="t-th">คำถามทั่วไป</span></option>
+                        <option value="Other"><span class="t-en">Other</span><span class="t-th">อื่นๆ</span></option>
                     </select>
                 </div>
                 <div class="form-group reveal">
-                    <label for="message">Message</label>
+                    <label for="message"><span class="t-en">Message</span><span class="t-th">ข้อความ</span></label>
                     <textarea id="message" name="message" rows="5" required placeholder="What's on your mind..."></textarea>
                 </div>
                 <button type="submit" class="btn-submit reveal">
-                    Send
+                    <span class="t-en">Send</span><span class="t-th">ส่ง</span>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
                 </button>
             </form>
             <div class="form-success" id="formSuccess">
                 <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
-                <h3>Sent.</h3>
-                <p>We'll get back to you soon.</p>
+                <h3><span class="t-en">Sent.</span><span class="t-th">ส่งแล้ว</span></h3>
+                <p><span class="t-en">We'll get back to you soon.</span><span class="t-th">เราจะติดต่อกลับเร็วๆ นี้</span></p>
             </div>
         </div>
 
@@ -144,13 +145,13 @@
     <footer class="footer">
         <div class="footer-inner">
             <div class="footer-brand">
-                HEADBANG BARBER
-                <span>Bangkok · Cuts & Nails</span>
+                <img src="img/logo.jpg" alt="HEADBANG BARBER" class="footer-logo-img">
+                <span><span class="t-en">Bangkok · Cuts &amp; Nails</span><span class="t-th">กรุงเทพฯ · ตัดผม &amp; ทำเล็บ</span></span>
             </div>
             <ul class="footer-links">
-                <li><a href="services.html">Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html"><span class="t-en">Services</span><span class="t-th">บริการ</span></a></li>
+                <li><a href="gallery.html"><span class="t-en">Gallery</span><span class="t-th">ผลงาน</span></a></li>
+                <li><a href="contact.html"><span class="t-en">Contact</span><span class="t-th">ติดต่อ</span></a></li>
                 <li><a href="https://www.instagram.com/headbangbarber/" target="_blank" rel="noopener">Instagram</a></li>
             </ul>
             <p class="footer-copy">&copy; 2026 Headbang Barber</p>

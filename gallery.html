@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,24 +7,25 @@
     <meta property="og:title" content="Gallery — HEADBANG BARBER">
     <meta property="og:description" content="The work speaks for itself.">
     <title>Gallery — HEADBANG BARBER</title>
+    <link rel="icon" href="img/logo.jpg"><link rel="shortcut icon" href="img/logo.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-<link rel="icon" href="img/logo.jpg"><link rel="shortcut icon" href="img/logo.jpg">
 </head>
-<body>
+<body class="lang-en">
 
     <nav class="navbar scrolled" id="navbar">
         <a href="index.html" class="nav-brand"><img src="img/logo.jpg" alt="HEADBANG BARBER" class="nav-logo"></a>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html" class="active">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html"><span class="t-en">Home</span><span class="t-th">หน้าแรก</span></a></li>
+            <li><a href="services.html"><span class="t-en">Services</span><span class="t-th">บริการ</span></a></li>
+            <li><a href="gallery.html" class="active"><span class="t-en">Gallery</span><span class="t-th">ผลงาน</span></a></li>
+            <li><a href="contact.html"><span class="t-en">Contact</span><span class="t-th">ติดต่อ</span></a></li>
         </ul>
         <div class="nav-right">
-            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener" class="btn-book">Book Now</a>
+            <button class="lang-btn" id="langToggle">ภาษาไทย</button>
+            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener" class="btn-book"><span class="t-en">Book Now</span><span class="t-th">จองคิว</span></a>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
             </button>
@@ -33,64 +34,67 @@
 
     <div class="mobile-menu" id="mobileMenu">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html"><span class="t-en">Home</span><span class="t-th">หน้าแรก</span></a></li>
+            <li><a href="services.html"><span class="t-en">Services</span><span class="t-th">บริการ</span></a></li>
+            <li><a href="gallery.html"><span class="t-en">Gallery</span><span class="t-th">ผลงาน</span></a></li>
+            <li><a href="contact.html"><span class="t-en">Contact</span><span class="t-th">ติดต่อ</span></a></li>
         </ul>
         <div class="mobile-book">
-            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener">Book Now</a>
+            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener"><span class="t-en">Book Now</span><span class="t-th">จองคิว</span></a>
         </div>
     </div>
 
     <!-- PAGE HERO -->
-    <div class="page-hero" style="padding-top:0;">
+    <div class="page-hero">
         <div class="page-hero-inner">
-            <h1 class="reveal">THE<br>WORK</h1>
-            <p class="reveal">Every cut. Every set. Done with intention.</p>
+            <h1 class="reveal"><span class="t-en">THE<br>WORK</span><span class="t-th">ผล<br>งาน</span></h1>
+            <p class="reveal">
+                <span class="t-en">Every cut. Every set. Done with intention.</span>
+                <span class="t-th">ทุกการตัด ทุกเซ็ต ทำด้วยความตั้งใจ</span>
+            </p>
         </div>
     </div>
 
     <!-- FILTER -->
     <div class="filter-bar">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="cuts">Cuts</button>
-        <button class="filter-btn" data-filter="nails">Nails</button>
+        <button class="filter-btn active" data-filter="all"><span class="t-en">All</span><span class="t-th">ทั้งหมด</span></button>
+        <button class="filter-btn" data-filter="cuts"><span class="t-en">Cuts</span><span class="t-th">ตัดผม</span></button>
+        <button class="filter-btn" data-filter="nails"><span class="t-en">Nails</span><span class="t-th">ทำเล็บ</span></button>
     </div>
 
     <!-- GALLERY -->
     <div class="gallery-masonry">
-        <div class="gallery-item reveal" data-cat="cuts"><img src="img/cut-1.png" alt="Haircut"><span class="g-cat">Cuts</span></div>
-        <div class="gallery-item reveal" data-cat="nails"><img src="img/nail-1.png" alt="Nails"><span class="g-cat">Nails</span></div>
-        <div class="gallery-item reveal" data-cat="cuts"><img src="img/cut-2.png" alt="Haircut"><span class="g-cat">Cuts</span></div>
-        <div class="gallery-item reveal" data-cat="nails"><img src="img/nail-2.png" alt="Nails"><span class="g-cat">Nails</span></div>
-        <div class="gallery-item reveal" data-cat="cuts"><img src="img/cut-3.png" alt="Haircut"><span class="g-cat">Cuts</span></div>
-        <div class="gallery-item reveal" data-cat="nails"><img src="img/nail-3.png" alt="Nails"><span class="g-cat">Nails</span></div>
-        <div class="gallery-item reveal" data-cat="cuts"><img src="img/cut-4.jpg" alt="Haircut"><span class="g-cat">Cuts</span></div>
-        <div class="gallery-item reveal" data-cat="nails"><img src="img/nail-4.png" alt="Nails"><span class="g-cat">Nails</span></div>
-        <div class="gallery-item reveal" data-cat="cuts"><img src="img/cut-5.jpg" alt="Haircut"><span class="g-cat">Cuts</span></div>
-        <div class="gallery-item reveal" data-cat="nails"><img src="img/nail-5.png" alt="Nails"><span class="g-cat">Nails</span></div>
-        <div class="gallery-item reveal" data-cat="cuts"><img src="img/cut-6.jpg" alt="Haircut"><span class="g-cat">Cuts</span></div>
-        <div class="gallery-item reveal" data-cat="nails"><img src="img/nail-6.png" alt="Nails"><span class="g-cat">Nails</span></div>
-        <div class="gallery-item reveal" data-cat="cuts"><img src="img/cut-7.jpg" alt="Haircut"><span class="g-cat">Cuts</span></div>
-        <div class="gallery-item reveal" data-cat="nails"><img src="img/nail-7.png" alt="Nails"><span class="g-cat">Nails</span></div>
-        <div class="gallery-item reveal" data-cat="cuts"><img src="img/cut-8.jpg" alt="Haircut"><span class="g-cat">Cuts</span></div>
-        <div class="gallery-item reveal" data-cat="nails"><img src="img/nail-8.png" alt="Nails"><span class="g-cat">Nails</span></div>
-        <div class="gallery-item reveal" data-cat="cuts"><img src="img/cut-9.jpg" alt="Haircut"><span class="g-cat">Cuts</span></div>
-        <div class="gallery-item reveal" data-cat="nails"><img src="img/nail-9.png" alt="Nails"><span class="g-cat">Nails</span></div>
+        <div class="gallery-item reveal" data-cat="cuts"><img src="img/cut-1.png" alt="Haircut"><span class="g-cat"><span class="t-en">Cuts</span><span class="t-th">ตัดผม</span></span></div>
+        <div class="gallery-item reveal" data-cat="nails"><img src="img/nail-1.png" alt="Nails"><span class="g-cat"><span class="t-en">Nails</span><span class="t-th">ทำเล็บ</span></span></div>
+        <div class="gallery-item reveal" data-cat="cuts"><img src="img/cut-2.png" alt="Haircut"><span class="g-cat"><span class="t-en">Cuts</span><span class="t-th">ตัดผม</span></span></div>
+        <div class="gallery-item reveal" data-cat="nails"><img src="img/nail-2.png" alt="Nails"><span class="g-cat"><span class="t-en">Nails</span><span class="t-th">ทำเล็บ</span></span></div>
+        <div class="gallery-item reveal" data-cat="cuts"><img src="img/cut-3.png" alt="Haircut"><span class="g-cat"><span class="t-en">Cuts</span><span class="t-th">ตัดผม</span></span></div>
+        <div class="gallery-item reveal" data-cat="nails"><img src="img/nail-3.png" alt="Nails"><span class="g-cat"><span class="t-en">Nails</span><span class="t-th">ทำเล็บ</span></span></div>
+        <div class="gallery-item reveal" data-cat="cuts"><img src="img/cut-4.jpg" alt="Haircut"><span class="g-cat"><span class="t-en">Cuts</span><span class="t-th">ตัดผม</span></span></div>
+        <div class="gallery-item reveal" data-cat="nails"><img src="img/nail-4.png" alt="Nails"><span class="g-cat"><span class="t-en">Nails</span><span class="t-th">ทำเล็บ</span></span></div>
+        <div class="gallery-item reveal" data-cat="cuts"><img src="img/cut-5.jpg" alt="Haircut"><span class="g-cat"><span class="t-en">Cuts</span><span class="t-th">ตัดผม</span></span></div>
+        <div class="gallery-item reveal" data-cat="nails"><img src="img/nail-5.png" alt="Nails"><span class="g-cat"><span class="t-en">Nails</span><span class="t-th">ทำเล็บ</span></span></div>
+        <div class="gallery-item reveal" data-cat="cuts"><img src="img/cut-6.jpg" alt="Haircut"><span class="g-cat"><span class="t-en">Cuts</span><span class="t-th">ตัดผม</span></span></div>
+        <div class="gallery-item reveal" data-cat="nails"><img src="img/nail-6.png" alt="Nails"><span class="g-cat"><span class="t-en">Nails</span><span class="t-th">ทำเล็บ</span></span></div>
+        <div class="gallery-item reveal" data-cat="cuts"><img src="img/cut-7.jpg" alt="Haircut"><span class="g-cat"><span class="t-en">Cuts</span><span class="t-th">ตัดผม</span></span></div>
+        <div class="gallery-item reveal" data-cat="nails"><img src="img/nail-7.png" alt="Nails"><span class="g-cat"><span class="t-en">Nails</span><span class="t-th">ทำเล็บ</span></span></div>
+        <div class="gallery-item reveal" data-cat="cuts"><img src="img/cut-8.jpg" alt="Haircut"><span class="g-cat"><span class="t-en">Cuts</span><span class="t-th">ตัดผม</span></span></div>
+        <div class="gallery-item reveal" data-cat="nails"><img src="img/nail-8.png" alt="Nails"><span class="g-cat"><span class="t-en">Nails</span><span class="t-th">ทำเล็บ</span></span></div>
+        <div class="gallery-item reveal" data-cat="cuts"><img src="img/cut-9.jpg" alt="Haircut"><span class="g-cat"><span class="t-en">Cuts</span><span class="t-th">ตัดผม</span></span></div>
+        <div class="gallery-item reveal" data-cat="nails"><img src="img/nail-9.png" alt="Nails"><span class="g-cat"><span class="t-en">Nails</span><span class="t-th">ทำเล็บ</span></span></div>
     </div>
 
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-inner">
             <div class="footer-brand">
-                HEADBANG BARBER
-                <span>Bangkok · Cuts & Nails</span>
+                <img src="img/logo.jpg" alt="HEADBANG BARBER" class="footer-logo-img">
+                <span><span class="t-en">Bangkok · Cuts &amp; Nails</span><span class="t-th">กรุงเทพฯ · ตัดผม &amp; ทำเล็บ</span></span>
             </div>
             <ul class="footer-links">
-                <li><a href="services.html">Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html"><span class="t-en">Services</span><span class="t-th">บริการ</span></a></li>
+                <li><a href="gallery.html"><span class="t-en">Gallery</span><span class="t-th">ผลงาน</span></a></li>
+                <li><a href="contact.html"><span class="t-en">Contact</span><span class="t-th">ติดต่อ</span></a></li>
                 <li><a href="https://www.instagram.com/headbangbarber/" target="_blank" rel="noopener">Instagram</a></li>
             </ul>
             <p class="footer-copy">&copy; 2026 Headbang Barber</p>
