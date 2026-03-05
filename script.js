@@ -1,8 +1,11 @@
 // ── NAV SCROLL
 const navbar = document.getElementById('navbar');
 if (navbar) {
+    const alwaysScrolled = navbar.classList.contains('scrolled');
     window.addEventListener('scroll', () => {
-        navbar.classList.toggle('scrolled', window.scrollY > 40);
+        if (!alwaysScrolled) {
+            navbar.classList.toggle('scrolled', window.scrollY > 40);
+        }
     });
 }
 
