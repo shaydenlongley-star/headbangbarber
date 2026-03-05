@@ -81,6 +81,18 @@ h1, h2, h3, h4 {
     letter-spacing: 0.05em;
     color: var(--white);
 }
+.nav-logo {
+    height: 48px;
+    width: auto;
+    mix-blend-mode: screen;
+    filter: brightness(0) invert(1);
+}
+.footer-logo-img {
+    height: 64px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    margin-bottom: 4px;
+}
 .nav-links {
     display: flex;
     gap: 36px;
