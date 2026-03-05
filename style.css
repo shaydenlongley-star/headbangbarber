@@ -698,6 +698,42 @@ h1, h2, h3, h4 {
 .form-success h3 { font-size: 2rem; }
 .form-success p { color: var(--text-mid); font-size: 0.88rem; }
 
+/* ── ABOUT HOME ── */
+.about-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+.about-home-text .section-title { margin-bottom: 0; }
+.about-home-body {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about-home-body p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.8;
+}
+.about-home-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--black);
+    transition: gap 0.2s;
+}
+.about-home-link:hover { gap: 14px; }
+@media (max-width: 768px) {
+    .about-home { grid-template-columns: 1fr; gap: 32px; }
+}
+
 /* ── MAP ── */
 .map-wrap {
     border-top: 1px solid var(--border);
