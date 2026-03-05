@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Headbang Barber gallery — cuts, fades, and nail work from our Bangkok shop.">
+    <meta property="og:title" content="Gallery — HEADBANG BARBER">
+    <meta property="og:description" content="The work speaks for itself.">
+    <title>Gallery — HEADBANG BARBER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar scrolled" id="navbar">
+        <a href="index.html" class="nav-brand">HEADBANG BARBER</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener" class="btn-book">Book Now</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-book">
+            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener">Book Now</a>
+        </div>
+    </div>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero" style="padding-top:0;">
+        <div class="page-hero-inner">
+            <h1 class="reveal">THE<br>WORK</h1>
+            <p class="reveal">Every cut. Every set. Done with intention.</p>
+        </div>
+    </div>
+
+    <!-- FILTER -->
+    <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="cuts">Cuts</button>
+        <button class="filter-btn" data-filter="nails">Nails</button>
+    </div>
+
+    <!-- GALLERY -->
+    <div class="gallery-masonry">
+        <div class="gallery-item reveal" data-cat="cuts"><div class="g-placeholder">Cut 01</div><span class="g-cat">Cuts</span></div>
+        <div class="gallery-item reveal" data-cat="nails"><div class="g-placeholder">Nails 01</div><span class="g-cat">Nails</span></div>
+        <div class="gallery-item reveal" data-cat="cuts"><div class="g-placeholder">Cut 02</div><span class="g-cat">Cuts</span></div>
+        <div class="gallery-item reveal" data-cat="cuts"><div class="g-placeholder">Cut 03</div><span class="g-cat">Cuts</span></div>
+        <div class="gallery-item reveal" data-cat="nails"><div class="g-placeholder">Nails 02</div><span class="g-cat">Nails</span></div>
+        <div class="gallery-item reveal" data-cat="cuts"><div class="g-placeholder">Cut 04</div><span class="g-cat">Cuts</span></div>
+        <div class="gallery-item reveal" data-cat="nails"><div class="g-placeholder">Nails 03</div><span class="g-cat">Nails</span></div>
+        <div class="gallery-item reveal" data-cat="cuts"><div class="g-placeholder">Cut 05</div><span class="g-cat">Cuts</span></div>
+        <div class="gallery-item reveal" data-cat="nails"><div class="g-placeholder">Nails 04</div><span class="g-cat">Nails</span></div>
+        <div class="gallery-item reveal" data-cat="cuts"><div class="g-placeholder">Cut 06</div><span class="g-cat">Cuts</span></div>
+        <div class="gallery-item reveal" data-cat="cuts"><div class="g-placeholder">Cut 07</div><span class="g-cat">Cuts</span></div>
+        <div class="gallery-item reveal" data-cat="nails"><div class="g-placeholder">Nails 05</div><span class="g-cat">Nails</span></div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                HEADBANG BARBER
+                <span>Bangkok · Cuts & Nails</span>
+            </div>
+            <ul class="footer-links">
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.instagram.com/headbangbarber/" target="_blank" rel="noopener">Instagram</a></li>
+            </ul>
+            <p class="footer-copy">&copy; 2026 Headbang Barber</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
