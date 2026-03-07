@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,24 +7,25 @@
     <meta property="og:title" content="Services — HEADBANG BARBER">
     <meta property="og:description" content="Cuts and nails done right. See our full menu.">
     <title>Services — HEADBANG BARBER</title>
+    <link rel="icon" href="img/logo.jpg"><link rel="shortcut icon" href="img/logo.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-<link rel="icon" href="img/logo.jpg"><link rel="shortcut icon" href="img/logo.jpg">
 </head>
-<body>
+<body class="lang-en">
 
     <nav class="navbar scrolled" id="navbar">
         <a href="index.html" class="nav-brand"><img src="img/logo.jpg" alt="HEADBANG BARBER" class="nav-logo"></a>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html" class="active">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html"><span class="t-en">Home</span><span class="t-th">หน้าแรก</span></a></li>
+            <li><a href="services.html" class="active"><span class="t-en">Services</span><span class="t-th">บริการ</span></a></li>
+            <li><a href="gallery.html"><span class="t-en">Gallery</span><span class="t-th">ผลงาน</span></a></li>
+            <li><a href="contact.html"><span class="t-en">Contact</span><span class="t-th">ติดต่อ</span></a></li>
         </ul>
         <div class="nav-right">
-            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener" class="btn-book">Book Now</a>
+            <button class="lang-btn" id="langToggle">ภาษาไทย</button>
+            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener" class="btn-book"><span class="t-en">Book Now</span><span class="t-th">จองคิว</span></a>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
             </button>
@@ -33,175 +34,160 @@
 
     <div class="mobile-menu" id="mobileMenu">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html"><span class="t-en">Home</span><span class="t-th">หน้าแรก</span></a></li>
+            <li><a href="services.html"><span class="t-en">Services</span><span class="t-th">บริการ</span></a></li>
+            <li><a href="gallery.html"><span class="t-en">Gallery</span><span class="t-th">ผลงาน</span></a></li>
+            <li><a href="contact.html"><span class="t-en">Contact</span><span class="t-th">ติดต่อ</span></a></li>
         </ul>
         <div class="mobile-book">
-            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener">Book Now</a>
+            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener"><span class="t-en">Book Now</span><span class="t-th">จองคิว</span></a>
         </div>
     </div>
 
-    <!-- PAGE HERO -->
     <div class="page-hero">
         <div class="page-hero-inner">
-            <h1 class="reveal">THE<br>MENU</h1>
-            <p class="reveal">Everything we do, done properly. Prices listed are starting prices — ask us about add-ons.</p>
+            <h1 class="reveal"><span class="t-en">THE<br>MENU</span><span class="t-th">เมนู<br>บริการ</span></h1>
+            <p class="reveal">
+                <span class="t-en">Everything we do, done properly. Prices listed are starting prices.</span>
+                <span class="t-th">ทุกบริการของเรา ทำอย่างถูกต้อง ราคาที่แสดงเป็นราคาเริ่มต้น</span>
+            </p>
         </div>
     </div>
 
-    <!-- SERVICES SPLIT -->
     <div class="services-split">
-
-        <!-- BARBER -->
         <div class="services-col dark">
-            <h2 class="reveal">CUTS</h2>
-
+            <h2 class="reveal"><span class="t-en">CUTS</span><span class="t-th">ตัดผม</span></h2>
             <div class="service-item reveal">
                 <div>
-                    <div class="service-name">Haircut</div>
-                    <div class="service-desc">Classic cut, any length</div>
+                    <div class="service-name"><span class="t-en">Haircut</span><span class="t-th">ตัดผม</span></div>
+                    <div class="service-desc"><span class="t-en">Classic cut, any length</span><span class="t-th">ตัดผมทั่วไป ทุกความยาว</span></div>
                 </div>
                 <div class="service-price">฿350</div>
             </div>
-
             <div class="service-item reveal">
                 <div>
-                    <div class="service-name">Haircut + Wash</div>
-                    <div class="service-desc">Cut with shampoo & blow dry</div>
+                    <div class="service-name"><span class="t-en">Haircut + Wash</span><span class="t-th">ตัดผม + สระผม</span></div>
+                    <div class="service-desc"><span class="t-en">Cut with shampoo & blow dry</span><span class="t-th">ตัดพร้อมสระและเป่าผม</span></div>
                 </div>
                 <div class="service-price">฿450</div>
             </div>
-
             <div class="service-item reveal">
                 <div>
-                    <div class="service-name">Fade</div>
-                    <div class="service-desc">Skin, low, mid or high fade</div>
+                    <div class="service-name"><span class="t-en">Fade</span><span class="t-th">เฟด</span></div>
+                    <div class="service-desc"><span class="t-en">Skin, low, mid or high fade</span><span class="t-th">สกิน โลว์ มิด หรือไฮเฟด</span></div>
                 </div>
                 <div class="service-price">฿400</div>
             </div>
-
             <div class="service-item reveal">
                 <div>
-                    <div class="service-name">Beard Trim</div>
-                    <div class="service-desc">Shape and define</div>
+                    <div class="service-name"><span class="t-en">Beard Trim</span><span class="t-th">แต่งเครา</span></div>
+                    <div class="service-desc"><span class="t-en">Shape and define</span><span class="t-th">จัดรูปทรงและตกแต่ง</span></div>
                 </div>
                 <div class="service-price">฿200</div>
             </div>
-
             <div class="service-item reveal">
                 <div>
-                    <div class="service-name">Haircut + Beard</div>
-                    <div class="service-desc">The full package</div>
+                    <div class="service-name"><span class="t-en">Haircut + Beard</span><span class="t-th">ตัดผม + แต่งเครา</span></div>
+                    <div class="service-desc"><span class="t-en">The full package</span><span class="t-th">แพ็กเกจครบชุด</span></div>
                 </div>
                 <div class="service-price">฿550</div>
             </div>
-
             <div class="service-item reveal">
                 <div>
-                    <div class="service-name">Design / Pattern</div>
-                    <div class="service-desc">Add-on to any cut</div>
+                    <div class="service-name"><span class="t-en">Design / Pattern</span><span class="t-th">แกะลาย</span></div>
+                    <div class="service-desc"><span class="t-en">Add-on to any cut</span><span class="t-th">เพิ่มเติมจากบริการตัดผม</span></div>
                 </div>
                 <div class="service-price">฿100+</div>
             </div>
-
             <div class="service-item reveal">
                 <div>
-                    <div class="service-name">Head Shave</div>
-                    <div class="service-desc">Clean blade shave</div>
+                    <div class="service-name"><span class="t-en">Head Shave</span><span class="t-th">โกนหัว</span></div>
+                    <div class="service-desc"><span class="t-en">Clean blade shave</span><span class="t-th">โกนด้วยมีดโกนสะอาด</span></div>
                 </div>
                 <div class="service-price">฿350</div>
             </div>
-
-            <p class="price-note reveal">* Prices are estimates. DM us on Instagram or Line to confirm current pricing.</p>
+            <p class="price-note reveal">
+                <span class="t-en">* Prices are estimates. DM us on Instagram or Line to confirm.</span>
+                <span class="t-th">* ราคาเป็นการประมาณการ กรุณาสอบถามผ่าน Instagram หรือ Line</span>
+            </p>
         </div>
 
-        <!-- NAILS -->
         <div class="services-col light">
-            <h2 class="reveal">NAILS</h2>
-
+            <h2 class="reveal"><span class="t-en">NAILS</span><span class="t-th">ทำเล็บ</span></h2>
             <div class="service-item reveal">
                 <div>
-                    <div class="service-name">Manicure</div>
-                    <div class="service-desc">Shape, clean, polish</div>
+                    <div class="service-name"><span class="t-en">Manicure</span><span class="t-th">เมนิเคียว</span></div>
+                    <div class="service-desc"><span class="t-en">Shape, clean, polish</span><span class="t-th">จัดรูปทรง ทำความสะอาด ทาสี</span></div>
                 </div>
                 <div class="service-price">฿350</div>
             </div>
-
             <div class="service-item reveal">
                 <div>
-                    <div class="service-name">Pedicure</div>
-                    <div class="service-desc">Full foot treatment</div>
+                    <div class="service-name"><span class="t-en">Pedicure</span><span class="t-th">เพดิเคียว</span></div>
+                    <div class="service-desc"><span class="t-en">Full foot treatment</span><span class="t-th">ดูแลเท้าแบบครบถ้วน</span></div>
                 </div>
                 <div class="service-price">฿450</div>
             </div>
-
             <div class="service-item reveal">
                 <div>
-                    <div class="service-name">Gel Manicure</div>
-                    <div class="service-desc">Long-lasting colour</div>
+                    <div class="service-name"><span class="t-en">Gel Manicure</span><span class="t-th">เจลเมนิเคียว</span></div>
+                    <div class="service-desc"><span class="t-en">Long-lasting colour</span><span class="t-th">สีที่ติดทนนาน</span></div>
                 </div>
                 <div class="service-price">฿550</div>
             </div>
-
             <div class="service-item reveal">
                 <div>
-                    <div class="service-name">Gel Pedicure</div>
-                    <div class="service-desc">Gel finish, full treatment</div>
+                    <div class="service-name"><span class="t-en">Gel Pedicure</span><span class="t-th">เจลเพดิเคียว</span></div>
+                    <div class="service-desc"><span class="t-en">Gel finish, full treatment</span><span class="t-th">เจลพร้อมดูแลเต็มรูปแบบ</span></div>
                 </div>
                 <div class="service-price">฿650</div>
             </div>
-
             <div class="service-item reveal">
                 <div>
-                    <div class="service-name">Nail Art</div>
-                    <div class="service-desc">Custom designs, add-on</div>
+                    <div class="service-name"><span class="t-en">Nail Art</span><span class="t-th">ลวดลายเล็บ</span></div>
+                    <div class="service-desc"><span class="t-en">Custom designs, add-on</span><span class="t-th">ลวดลายตามต้องการ</span></div>
                 </div>
                 <div class="service-price">฿200+</div>
             </div>
-
             <div class="service-item reveal">
                 <div>
-                    <div class="service-name">Nail Extension</div>
-                    <div class="service-desc">Acrylic or gel tips</div>
+                    <div class="service-name"><span class="t-en">Nail Extension</span><span class="t-th">ต่อเล็บ</span></div>
+                    <div class="service-desc"><span class="t-en">Acrylic or gel tips</span><span class="t-th">อะคริลิกหรือเจล</span></div>
                 </div>
                 <div class="service-price">฿800+</div>
             </div>
-
             <div class="service-item reveal">
                 <div>
-                    <div class="service-name">Mani + Pedi Combo</div>
-                    <div class="service-desc">Hands and feet together</div>
+                    <div class="service-name"><span class="t-en">Mani + Pedi Combo</span><span class="t-th">เมนิ + เพดิ คอมโบ</span></div>
+                    <div class="service-desc"><span class="t-en">Hands and feet together</span><span class="t-th">มือและเท้าพร้อมกัน</span></div>
                 </div>
                 <div class="service-price">฿750</div>
             </div>
-
-            <p class="price-note reveal" style="color:#888;">* Prices are estimates. DM us on Instagram or Line to confirm current pricing.</p>
+            <p class="price-note reveal" style="color:#888;">
+                <span class="t-en">* Prices are estimates. DM us on Instagram or Line to confirm.</span>
+                <span class="t-th">* ราคาเป็นการประมาณการ กรุณาสอบถามผ่าน Instagram หรือ Line</span>
+            </p>
         </div>
-
     </div>
 
-    <!-- CTA -->
     <div class="cta-strip">
-        <h2 class="reveal">READY?</h2>
+        <h2 class="reveal"><span class="t-en">READY?</span><span class="t-th">พร้อมแล้ว?</span></h2>
         <div class="cta-strip-right reveal">
-            <p>Book via Line. Walk-ins welcome.</p>
-            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener" class="btn-primary">Book on Line</a>
+            <p><span class="t-en">Book via Line. Walk-ins welcome.</span><span class="t-th">จองผ่าน Line รับ walk-in</span></p>
+            <a href="https://lin.ee/F1SvXvC" target="_blank" rel="noopener" class="btn-primary"><span class="t-en">Book on Line</span><span class="t-th">จองผ่าน Line</span></a>
         </div>
     </div>
 
-    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-inner">
             <div class="footer-brand">
-                HEADBANG BARBER
-                <span>Bangkok · Cuts & Nails</span>
+                <img src="img/logo.jpg" alt="HEADBANG BARBER" class="footer-logo-img">
+                <span><span class="t-en">Bangkok · Cuts &amp; Nails</span><span class="t-th">กรุงเทพฯ · ตัดผม &amp; ทำเล็บ</span></span>
             </div>
             <ul class="footer-links">
-                <li><a href="services.html">Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html"><span class="t-en">Services</span><span class="t-th">บริการ</span></a></li>
+                <li><a href="gallery.html"><span class="t-en">Gallery</span><span class="t-th">ผลงาน</span></a></li>
+                <li><a href="contact.html"><span class="t-en">Contact</span><span class="t-th">ติดต่อ</span></a></li>
                 <li><a href="https://www.instagram.com/headbangbarber/" target="_blank" rel="noopener">Instagram</a></li>
             </ul>
             <p class="footer-copy">&copy; 2026 Headbang Barber</p>

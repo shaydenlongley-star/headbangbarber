@@ -1,3 +1,20 @@
+// ── LANGUAGE TOGGLE
+const langToggle = document.getElementById('langToggle');
+const savedLang = localStorage.getItem('hb-lang') || 'en';
+function setLang(lang) {
+    document.body.classList.remove('lang-en', 'lang-th');
+    document.body.classList.add('lang-' + lang);
+    if (langToggle) langToggle.textContent = lang === 'en' ? 'ภาษาไทย' : 'English';
+    localStorage.setItem('hb-lang', lang);
+}
+setLang(savedLang);
+if (langToggle) {
+    langToggle.addEventListener('click', () => {
+        const current = document.body.classList.contains('lang-en') ? 'en' : 'th';
+        setLang(current === 'en' ? 'th' : 'en');
+    });
+}
+
 // ── NAV SCROLL
 const navbar = document.getElementById('navbar');
 if (navbar) {

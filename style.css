@@ -29,6 +29,23 @@ body {
     overflow-x: hidden;
 }
 a { text-decoration: none; color: inherit; transition: color 0.2s; }
+
+/* ── LANGUAGE TOGGLE ── */
+body.lang-en .t-th { display: none; }
+body.lang-th .t-en { display: none; }
+.lang-btn {
+    background: none;
+    border: 1px solid rgba(255,255,255,0.25);
+    color: var(--text-mid);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+}
+.lang-btn:hover { color: var(--white); border-color: rgba(255,255,255,0.6); }
 img { display: block; max-width: 100%; }
 
 /* ── TYPOGRAPHY ── */
